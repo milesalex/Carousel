@@ -46,7 +46,7 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7NF-9R-aZM">
-                                        <rect key="frame" x="19" y="1005" width="280" height="50"/>
+                                        <rect key="frame" x="20" y="1065" width="280" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <segue destination="ngd-Fv-gBP" kind="push" id="IgK-w0-uAX"/>
@@ -119,7 +119,7 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" id="PFu-PL-htF" userLabel="buttonParentView">
-                                        <rect key="frame" x="-1" y="367" width="321" height="104"/>
+                                        <rect key="frame" x="-1" y="345" width="321" height="104"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sign_in_buttons" id="W7f-6j-FT5">
@@ -142,14 +142,26 @@
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="wYK-Xv-HUD" appends="YES" id="8b6-38-qEl"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="xnr-zD-kqx"/>
+                    <value key="contentSizeForViewInPopover" type="size" width="320" height="568"/>
                     <connections>
                         <outlet property="backButton" destination="bLb-he-7Ec" id="ZMe-VY-HO3"/>
+                        <outlet property="buttonParentView" destination="PFu-PL-htF" id="Da3-IG-Sr1"/>
+                        <outlet property="fieldParentView" destination="jQN-mV-Ycs" id="H1T-HS-9Yh"/>
                         <outlet property="scrollView" destination="dkf-A5-Vns" id="4qh-pE-1Kd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KS3-Rb-7ml" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="wYK-Xv-HUD">
+                    <connections>
+                        <action selector="didTap:" destination="ngd-Fv-gBP" id="kN9-cL-hAb"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1108" y="352"/>
         </scene>
