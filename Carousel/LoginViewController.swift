@@ -46,7 +46,7 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         } else {
             activityIndicator.startAnimating()
             delay(2) {
-                if self.emailField.text == "alex@alexmilesdesign.com" && self.passwordField.text == "secret" {
+                if self.emailField.text == "Alex" && self.passwordField.text == "secret" {
                     self.activityIndicator.stopAnimating()
                     self.performSegueWithIdentifier("tutorialSegue", sender: self)
                 } else {
