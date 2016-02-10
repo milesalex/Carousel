@@ -238,13 +238,13 @@
         <!--Image Timeline View Controller-->
         <scene sceneID="FUF-sN-WBy">
             <objects>
-                <viewController id="Y3l-JI-UMB" customClass="ImageTimelineViewController" customModule="Carousel" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Y3l-JI-UMB" customClass="ImageTimelineViewController" customModule="Carousel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cyX-mT-3hb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="1564"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="jbD-2R-5V7">
-                                <rect key="frame" x="0.0" y="64" width="320" height="468"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="469"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" image="feed" id="FF0-wN-6E6">
@@ -276,7 +276,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.45912571046998429" blue="0.36590414106654601" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="3UF-Ax-Upz"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
