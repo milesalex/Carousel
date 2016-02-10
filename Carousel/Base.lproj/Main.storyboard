@@ -243,13 +243,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="1564"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" id="jbD-2R-5V7">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="jbD-2R-5V7">
+                                <rect key="frame" x="0.0" y="64" width="320" height="468"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" image="feed" id="FF0-wN-6E6">
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" image="feed" id="FF0-wN-6E6">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="1564"/>
-                                        <autoresizingMask key="autoresizingMask"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
                             </scrollView>
@@ -272,7 +272,7 @@
                                 </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="scrubber" id="W6e-cD-EAB">
-                                <rect key="frame" x="0.0" y="532" width="320" height="36"/>
+                                <rect key="frame" x="0.0" y="1528" width="320" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                             </imageView>
                         </subviews>
@@ -287,7 +287,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CnX-Xo-Zyv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3308" y="598.5"/>
+            <point key="canvasLocation" x="3308" y="598"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="r7D-q5-vdw">
@@ -311,7 +311,6 @@
         <scene sceneID="6Ld-y0-9B2">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="rFW-pq-CiM" sceneMemberID="viewController">
-                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="EfW-qD-m8D">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
