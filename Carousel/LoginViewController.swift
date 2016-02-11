@@ -21,6 +21,7 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var loginNavBar: UIImageView!
     
     @IBAction func didTap(sender: AnyObject) {
         view.endEditing(true)
@@ -55,7 +56,25 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
             }
         }
     }
-
+    
+    override func viewWillAppear(animated: Bool) {
+        let transform = CGAffineTransformMakeScale(0.2, 0.2)
+        loginNavBar.transform = transform
+        fieldParentView.transform = transform
+        
+        loginNavBar.alpha = 0
+        fieldParentView.alpha = 0
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        UIView.animateWithDuration(0.3) { () -> Void in
+            self.fieldParentView.transform = CGAffineTransformIdentity
+            self.loginNavBar.transform = CGAffineTransformIdentity
+            
+            self.fieldParentView.alpha = 1
+            self.loginNavBar.alpha = 1
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

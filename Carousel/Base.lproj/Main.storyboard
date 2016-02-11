@@ -56,7 +56,7 @@
                                         <rect key="frame" x="20" y="1065" width="280" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
-                                            <segue destination="ngd-Fv-gBP" kind="push" id="IgK-w0-uAX"/>
+                                            <segue destination="ngd-Fv-gBP" kind="push" animates="NO" id="IgK-w0-uAX"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -105,32 +105,32 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" id="jQN-mV-Ycs" userLabel="fieldParentView">
-                                        <rect key="frame" x="0.0" y="119" width="321" height="118"/>
+                                        <rect key="frame" x="0.0" y="28" width="321" height="209"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="login_form" id="DVb-bG-yc1">
-                                                <rect key="frame" x="1" y="0.0" width="320" height="110"/>
+                                                <rect key="frame" x="1" y="91" width="320" height="110"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" id="XYb-oV-LWN">
-                                                <rect key="frame" x="20" y="19" width="283" height="30"/>
+                                                <rect key="frame" x="20" y="110" width="283" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" id="joy-HP-7KC">
-                                                <rect key="frame" x="20" y="63" width="283" height="30"/>
+                                                <rect key="frame" x="20" y="154" width="283" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="login_text" id="gW9-JI-SKR">
+                                                <rect key="frame" x="0.0" y="8" width="320" height="70"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="login_text" id="gW9-JI-SKR">
-                                        <rect key="frame" x="0.0" y="25" width="320" height="70"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
                                     <view contentMode="scaleToFill" id="PFu-PL-htF" userLabel="buttonParentView">
                                         <rect key="frame" x="-1" y="345" width="321" height="104"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -171,6 +171,7 @@
                         <outlet property="buttonParentView" destination="PFu-PL-htF" id="Da3-IG-Sr1"/>
                         <outlet property="emailField" destination="XYb-oV-LWN" id="qqr-tL-y6J"/>
                         <outlet property="fieldParentView" destination="jQN-mV-Ycs" id="H1T-HS-9Yh"/>
+                        <outlet property="loginNavBar" destination="a1f-E7-hBb" id="dSD-dL-kkZ"/>
                         <outlet property="passwordField" destination="joy-HP-7KC" id="Q10-gP-mes"/>
                         <outlet property="scrollView" destination="dkf-A5-Vns" id="4qh-pE-1Kd"/>
                         <outlet property="signInButton" destination="PG2-AT-uTB" id="V9c-At-0Io"/>
