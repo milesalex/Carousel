@@ -12,12 +12,13 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var tutorialScrollView: UIScrollView!
     @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet weak var buttonParentView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tutorialScrollView.delegate = self
         tutorialScrollView?.contentSize = CGSize(width: 1280, height: 568)
-        
+        buttonParentView.alpha = 0
         
     }
 
@@ -32,6 +33,19 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
         
         // Set the current page, so the dots will update
         pageControl.currentPage = page
+        pageControl.hidden = false
+        
+        if page == 3 {
+            UIView.animateWithDuration(0.3) { () -> Void in
+                self.buttonParentView.alpha = 1
+                self.pageControl.hidden = true
+            }
+        } else {
+            UIView.animateWithDuration(0.3) { () -> Void in
+                self.buttonParentView.alpha = 0
+                self.pageControl.hidden = false
+            }
+        }
     }
     
 
