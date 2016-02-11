@@ -21,6 +21,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="1136"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe up to continue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="We6-r6-KOo">
+                                        <rect key="frame" x="80" y="298" width="161" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.71840232329842935" green="0.71840232329842935" blue="0.71840232329842935" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="intro_tile1" id="PMb-wD-Ev8">
                                         <rect key="frame" x="45" y="747" width="153" height="152"/>
                                         <autoresizingMask key="autoresizingMask"/>
@@ -62,6 +69,12 @@
                     <size key="freeformSize" width="320" height="1136"/>
                     <connections>
                         <outlet property="scrollView" destination="dk4-Ez-XfD" id="EmK-Wj-wUa"/>
+                        <outlet property="tile1" destination="PMb-wD-Ev8" id="pf0-AF-anM"/>
+                        <outlet property="tile2" destination="GgM-C4-bwG" id="kih-QS-ave"/>
+                        <outlet property="tile3" destination="aP6-9D-xx2" id="qh3-MC-i9Q"/>
+                        <outlet property="tile4" destination="h0F-UX-Sno" id="w1s-4r-hqC"/>
+                        <outlet property="tile5" destination="x6J-mj-Ziq" id="33R-Ga-VhH"/>
+                        <outlet property="tile6" destination="dNy-PH-29p" id="vNf-Xf-WpZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
