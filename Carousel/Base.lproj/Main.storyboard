@@ -221,17 +221,17 @@
                                 <rect key="frame" x="0.0" y="434" width="320" height="126"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="backup_button" id="6dN-eI-I74">
+                                        <rect key="frame" x="8" y="-6" width="320" height="97"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5hW-JZ-eLc">
-                                        <rect key="frame" x="20" y="63" width="282" height="49"/>
+                                        <rect key="frame" x="19" y="38" width="282" height="49"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <segue destination="rFW-pq-CiM" kind="modal" id="Vyg-Xl-Td5"/>
                                         </connections>
                                     </button>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="backup_button" id="6dN-eI-I74">
-                                        <rect key="frame" x="8" y="-6" width="320" height="97"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
